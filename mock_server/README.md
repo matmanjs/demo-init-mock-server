@@ -1,17 +1,23 @@
-# demo-init-mock-server
+# mock server
 
-matman init 命令初始化mock server之后的样例
-# matman-app
+本项目用于处理数据打桩。
 
-本项目旨在提供数据模拟和进行端对端测试。
 
-## 如何启动数据模拟服务
+## 启动
 
-管理后台启动命令如下，服务启动之后，可以打开 `http://localhost:9527` 进行管理端操作。
+在 matman-app 中执行以下命令即可。
 
 ```
 npm start
 ```
+
+
+## 管理
+
+服务启动之后，可以打开 `http://localhost:9527` 进行管理端操作。
+
+
+## 查看运行情况
 
 使用了 [pm2](https://www.npmjs.com/package/pm2) 来启动，命名为 `matman-app`，启动之后服务会常驻内存。关于 pm2 常用的操作包括：
 
@@ -19,16 +25,6 @@ npm start
 - `pm2 logs` ： 查看日志
 
 
-## 如何进行端对端测试
+## 其他
 
-端对端测试需要先执行构建：
-
-```
-npm run build
-```
-
-构建完成之后，运行测试命令即可：
-
-```
-npm run test
-```
+如果发现启动服务失败，则使用 `pm2 logs` 来查看运行情况。
