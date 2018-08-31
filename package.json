@@ -1,0 +1,22 @@
+{
+  "name": "demo-init-mock-server",
+  "version": "1.0.0",
+  "description": "demo of mock server after run matman init",
+  "main": "index.js",
+  "scripts": {
+    "start": "matman start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matmanjs/demo-init-mock-server.git"
+  },
+  "author": "helinjiang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matmanjs/demo-init-mock-server/issues"
+  },
+  "homepage": "https://github.com/matmanjs/demo-init-mock-server#readme",
+  "dependencies": {
+    "matman-mock": "^3.0.11"
+  }
+}
